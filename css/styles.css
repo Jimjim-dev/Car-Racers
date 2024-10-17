@@ -145,11 +145,11 @@ footer img{
   object-fit: cover;
 }
 
+
+/* CARS */
 .car-section p{
   font-size: 25px;
 }
-
-/* CARS */
 
 /* Styling for the overall page */
 body {
@@ -206,6 +206,20 @@ h1 {
   font-size: 1em;
   color: #fff;
 }
+
+.car_1, .car_2, .car_3, .car_4, .car_5, .car_6, 
+.car_7, .car_8, .car_9, .car_10, .car_11, .car_12,
+.car_13, .car_14, .car_15 {
+  width: 270px;          
+  height: 240px;         
+  background-size: cover; 
+  background-color: black; 
+  overflow: hidden;        
+  padding: 0;             
+  margin: 10px;          
+}
+
+
 
 /* ABOUT */
 
