@@ -183,6 +183,7 @@ h1 {
 
 a {
   color: white;
+  text-decoration: none;
 }
 .nav-buttons a {
   color: white;
@@ -352,7 +353,7 @@ h2 {
 
 /* Contact form styling */
 .contact-form {
-  width: 50%;
+  width: 52%;
   margin: 20px auto;
   background-color: white;
   padding: 20px;
@@ -360,12 +361,13 @@ h2 {
 }
 
 .contact-form input, .contact-form textarea {
-  width: 100%;
+  width: 98%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1em;
+  resize: none;
 }
 
 .contact-form button {
