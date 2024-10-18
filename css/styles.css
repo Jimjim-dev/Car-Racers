@@ -146,8 +146,15 @@ footer img{
 }
 
 
+
 /* CARS */
-.car-section p{
+.car-section {
+  margin: 0 auto; /* Center the section */
+  padding: 20px; /* Add padding around the section */
+}
+
+/* Paragraph styling within the car section */
+.car-section p {
   font-size: 25px;
 }
 
@@ -174,6 +181,9 @@ h1 {
   padding: 10px 20px;
 }
 
+a {
+  color: white;
+}
 .nav-buttons a {
   color: white;
   font-size: 1.5em;
@@ -182,23 +192,52 @@ h1 {
   font-weight: bold;
 }
 
-/* Car grid layout */
-.car-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
+.right {
+  margin-left: 85%;
+}
+@media screen and (max-width:1000px) {
+  .right {
+    margin-left: 77%;
+  }
+}
+/* Car grid styling */
+.cars_list {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
 }
 
+.car-grid{
+  width: 200px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.car-grid img {
+  width: 190px;
+  height: 160px;
+  object-fit: cover;
+  
+}
+
+/* Styling for each car item */
 .car-item {
   background-color: #333;
   border-radius: 8px;
-  padding: 10px;
+  width: 270px; /* Set width to 270px */
+  height: 240px; /* Set height to 240px */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image within the box */
+  overflow: hidden; /* Hide overflow */
 }
 
 .car-item img {
   width: 100%;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover; /* Make the image cover the entire box */
+  border-radius: 8px; /* Match border radius of the car item */
 }
 
 .car-item p {
@@ -207,17 +246,16 @@ h1 {
   color: #fff;
 }
 
-.car_1, .car_2, .car_3, .car_4, .car_5, .car_6, 
-.car_7, .car_8, .car_9, .car_10, .car_11, .car_12,
-.car_13, .car_14, .car_15 {
-  width: 270px;          
-  height: 240px;         
-  background-size: cover; 
-  background-color: black; 
-  overflow: hidden;        
-  padding: 0;             
-  margin: 10px;          
-}
+/* Ensure car-grid fits 15 cars */
+/* .car-grid {
+  width: 80%;
+  height: auto;
+  background-color: black;
+  overflow: hidden;
+  padding: 30px;
+  margin: 20px;
+} */
+
 
 
 
@@ -289,13 +327,14 @@ h1, h2 {
 
 h1 {
   margin-top: 30px;
-  font-size: 2.5em;
+  font-size: 3em; /* Increased from 2.5em */
 }
 
 h2 {
   margin-top: 40px;
-  font-size: 2em;
+  font-size: 2.2em; /* Increased from 2em */
 }
+
 
 /* Styling for navigation buttons */
 .nav-buttons {
